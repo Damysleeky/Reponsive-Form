@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}
+
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('bg-intro-desktop.png');
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    color: white;
+}
+
+h1 {
+    line-height: 0.5;
+    border-bottom: 10px;
+    padding-bottom: 20px;    
+}
+
+p {
+    line-height: 1.5;
+    border-top: 20px;
+}
+
+.tagline {
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    margin-bottom: 20px;
+    height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 0 8px 2px -2px #e46c70;
+}
+
+form {
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 8px 2px -2px #e46c70;
+}
+
+form p {
+    text-align: center;
+    color: grey;
+    width: 100%;
+    font-weight: lighter;
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+form p a {
+    color: red;
+    text-decoration: none;
+}
+
+input {
+    border: 2px solid rgba(128, 128, 128, 0.1);
+    height: 45px;
+    padding: 10px;
+    color: grey;
+    font-weight: bolder;
+    width: 85%;
+    margin-left: 40px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+input[type=text]::placeholder {
+    padding: 10px;
+    font-weight: bold;
+}
+
+input[type=email]::placeholder {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+input[type=password]::placeholder {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    width: 85%;
+    height: 35px;
+    margin-left: 40px;
+    margin-top: 25px;
+    border: 2px solid rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        display: inline;
+}
+    .container {
+        text-align: center;
+        width: auto;
+        padding: 80px 0px 0px 10px; 
+        margin: 30px;
+}
+
+    .tagline {
+       margin: 30px 30px 20px 20px; 
+       width: 90%;
+       height: 80px;
+       padding: 20px 10px;
+    }
+
+    form {
+        margin: 20px;
+        width: auto;
+    }
+
+    input {
+        margin-left: 20px;
+    }
+
+    button {
+        margin-left: 20px;
+    }
+}
